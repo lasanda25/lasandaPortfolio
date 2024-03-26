@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form action="" id="survey-form">
+            <fieldset>
+                <label class=personal-info for="name" id="name-label">Name <input class="personal-info-input" type="text" name="name" id="name" placeholder="Enter your name " required></label>
+                <label class=personal-info for="email" id="email-label">Email <input class="personal-info-input" type="email" name="email" id="email" placeholder="Enter your Email" required></label>
+                <label class=personal-info for="number" id="number-label">Age (optional) <input class="personal-info-input" type="number" name="number" id="number" placeholder="Age" min="13" max="30"></label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">What grade are you in currently?
+                    <select name="dropdown" id="dropdown" required>
+                        <option value="">(select your grade)</option>
+                        <option value="1">Grade 9</option>
+                        <option value="2">Grade 10</option>
+                        <option value="3">Grade 11</option>
+                        <option value="4">Grade 12</option>
+                        <option value="5">Other</option>
+                    </select>
+                </label>
+                
+            </fieldset>
+            <fieldset>
+                <label>Would you recommend our courses to anyone?
+                    <label for="recommend-yes"><input class="inline" type="radio" name="recommend" id="recommend-yes" value="yes"> Yes</label>
+                    <label for="recommend-no"><input class="inline" type="radio" name="recommend" id="recommend-no" value="no"> No</label>
+                </label>
+                
+            </fieldset>
+            <fieldset>
+                <label>Which of our course(s) did you enrol in? <p class="brackets">(Check all that apply)</p>
+                    <label for="math"><input class="inline" type="checkbox" name="subjects" id="math" value="math">Math</label>
+                    <label for="science"><input class="inline" type="checkbox" name="subjects" id="science" value="science">Science</label>
+                    <label for="english"><input class="inline" type="checkbox" name="subjects" id="english" value="english">English</label>
+                    <label for="history"><input class="inline" type="checkbox" name="subjects" id="history" value="history">History</label>
+                    <label for="geography"><input class="inline" type="checkbox" name="subjects" id="geography" value="geography">Geography</label>
+
+                </label>
+                
+            </fieldset>
+            <fieldset>
+                <label for="comments">Write your review<textarea name="comments" id="comments" cols="50" rows="3" placeholder="Write your review here"required></textarea></label>
+            </fieldset>           
+            <input id="submit" type="submit" value="Submit">
+            
+
+
+        </form>
+    </body>
+</html>
